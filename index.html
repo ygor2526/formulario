@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario - Inscrição</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cadastro de herois</h1>
-    <form action="#">
-       <!--Os campos ficam aqui dentro-->
-        <label for="busca">Buscar</label>
-        <input id="busca" name="busca" type="text" />
-        <button type="submit">Buscar</button>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" />
+  <header>
+    <h1>Academia de Herois</h1>
+    <p>Inscreva-se para participar da nossa proxima missão.</p>
+  </header>
 
-        <label for="idade">Idade</label>
-        <input id="idade" name="idade" type="number" />
+  <section>
+    <h2>Faça sua inscrição</h2>
+    <form action="#" method="get">
+      
+      <label for="nome">Nome de heroi</label>
+      <input id="nome" name="nome" type="text" required />
 
-        <label for="nascimento">Nascimento</label>
-        <input id="nascimento" name="nascimento" type="date" />
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" required />
 
-        <label for="manha">Manhã</label>
-        <input id="manha" name="periodo" type="radio" />
-        <label for="manha">Manhã</label>
-        <input id="tarde" name="periodo" type="radio" />
-        <label for="tarde">Tarde</label>
-        <input id="noite" name="periodo" type="radio" />
-        <label for="noite">Noite</label>
+      <label for="idade">Idade</label>
+      <input id="idade" name="idade" type="number" required />
 
-        <input id="novidades" name="novidades" type="checkbox" />
-        <label for="novidades">Desejo receber novidades</label> 
+      <label for="periodo">Escolha sua equipe:</label>
+      <select id="periodo" name="periodo">
+        <option value="" disabled selected>Escolha uma equipe</option>
+        <option value="manha">Liga da justiça</option>
+        <option value="tarde">Vingadores</option>
+        <option value="noite">X-men</option>
+      </select>
 
-        <br>
-        <br>
-        <label for="comida">Comida favorita</label>
-        <select id="comida" name="comida">
-            <option>Escolha uma comida</option>
-            <option>Grilho frito</option>
-            <option>Sapo frito</option>
-            <option>Paca frita</option>
-        </select>
-        <br>
-        <table fot="descrição">Como vc quer sua comida?</table>
-        <textara id="descrição" name="descrição" rows="4" rows="4"></textara>
-        <br>
-        <button type="submit">Buscar</button>
-        <button type="reset">Limpar</button>
-        </form>  
-    </body>
+      <fieldset class="grupo-radio">
+        <H2>Qual poder vc prefere?</H2>
+
+         <p class="grupo-checkbox">
+        <input type="radio" id="nao" name="criou_html" value="nao" />
+        <label for="nao" class="label-inline">Voar</label>
+        </p>
+
+           <p class="grupo-checkbox">
+        <input type="radio" id="nao" name="criou_html" value="nao" />
+        <label for="nao" class="label-inline">SuperVelocidade</label>
+        </p>
+        
+         <p class="grupo-checkbox">
+        <input type="radio" id="nao" name="criou_html" value="nao" />
+        <label for="nao" class="label-inline">Superforça</label>
+        </p>
+
+         <p class="grupo-checkbox">
+        <input type="radio" id="nao" name="criou_html" value="nao" />
+        <label for="nao" class="label-inline">Quero receber novas missões.</label>
+        </p>
+        
+
+      <label for="expectativa">Por que vc quer ser um heroi?</label>
+      <textarea id="expectativa" name="expectativa" rows="4"></textarea>
+
+      <button type="submit">Enviar inscrição</button>
+
+    </form>
+  </section>
+
+  <footer>
+    <p> prática de formulários HTML.</p>
+  </footer>
+
+</body>
 </html>
