@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>Cadastro de herois</h1>
+    <form action="#">
+       <!--Os campos ficam aqui dentro-->
+        <label for="busca">Buscar</label>
+        <input id="busca" name="busca" type="text" />
+        <button type="submit">Buscar</button>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" />
+
+        <label for="idade">Idade</label>
+        <input id="idade" name="idade" type="number" />
+
+        <label for="nascimento">Nascimento</label>
+        <input id="nascimento" name="nascimento" type="date" />
+
+        <label for="manha">Manhã</label>
+        <input id="manha" name="periodo" type="radio" />
+        <label for="manha">Manhã</label>
+        <input id="tarde" name="periodo" type="radio" />
+        <label for="tarde">Tarde</label>
+        <input id="noite" name="periodo" type="radio" />
+        <label for="noite">Noite</label>
+
+        <input id="novidades" name="novidades" type="checkbox" />
+        <label for="novidades">Desejo receber novidades</label> 
+
+        <br>
+        <br>
+        <label for="comida">Comida favorita</label>
+        <select id="comida" name="comida">
+            <option>Escolha uma comida</option>
+            <option>Grilho frito</option>
+            <option>Sapo frito</option>
+            <option>Paca frita</option>
+        </select>
+        <br>
+        <table fot="descrição">Como vc quer sua comida?</table>
+        <textara id="descrição" name="descrição" rows="4" rows="4"></textara>
+        <br>
+        <button type="submit">Buscar</button>
+        <button type="reset">Limpar</button>
+        </form>  
+    </body>
+</html>
